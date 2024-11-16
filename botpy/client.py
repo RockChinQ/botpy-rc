@@ -99,7 +99,8 @@ class Client:
         self._closed = True
 
         await self.http.close()
-        await self.client.close()
+        if hasattr(self, 'client'):
+            await self.client.close()
 
     def is_closed(self) -> bool:
         return self._closed
