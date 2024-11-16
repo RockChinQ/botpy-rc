@@ -4,7 +4,7 @@ import os
 from setuptools import setup, find_packages
 
 setup(
-    name="qq-botpy",
+    name="qq-botpy-rc",
     version=os.getenv("VERSION_NAME"),
     author="veehou",
     author_email="veehou@tencent.com",
